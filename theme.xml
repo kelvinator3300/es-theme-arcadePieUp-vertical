@@ -1,5 +1,5 @@
 <!--
-theme name:		arcadePieUp-vertical
+theme name:		mru2-vertical
 version:		1.0
 author:			kelvinator3300
 license:		to ill
@@ -14,55 +14,58 @@ was the greatest teacher.
 	<formatVersion>4</formatVersion>
 	<feature supported="carousel">
 
-	<view name="system">
+		<view name="system">
 
-		<image name="background" extra="true">
+			<image name="background" extra="true">
 <!-- You can change the background image by putting another image in the following path and editing the following line. -->
-			<path>./_inc/images/system.png</path>
-			<origin>0 0</origin>
-			<pos>0 0</pos>
-			<size>1 1</size>
-<!-- If you change the background image, you might want to edit the following line. Or just delete it. Or just comment it out. -->
-			<color>ffffffaa</color>
-		</image>
+				<path>./_inc/images/system.png</path>
+				<origin>0 0</origin>
+				<pos>0 0</pos>
+				<size>1 1</size>
+			</image>
 
-		<carousel name="systemcarousel">
-			<type>vertical</type>
-			<pos>0.094 0.07</pos>
-			<size>0.81 0.81</size>
-			<color>00000000</color>
-			<logoScale>1.8</logoScale>
-			<maxLogoCount>3</maxLogoCount>
-		</carousel>
+			<carousel name="systemcarousel">
+				<type>vertical</type>
+				<color>00000000</color>
+				<logoScale>2</logoScale>
+				<maxLogoCount>3</maxLogoCount>
+				<origin>0.5 0.5</origin>
+				<pos>0.5 0.48</pos>
+				<size>0.55 0.78</size>
+			</carousel>
+		
+			<text name="systemInfo">
+				<color>808080</color>
+				<fontSize>0.022</fontSize>
+				<origin>0.5 1</origin>
+				<pos>0.5 0.58</pos>
+				<size>0.5 0.03</size>
+			</text>
+
+			<image name="background_help" extra="true">
+				<path>./_inc/images/bg_color.png</path>
+				<origin>0 1</origin>
+				<pos>0 1</pos>
+				<size>1 0.02</size>
+				<color>000000</color>
+			</image>
+
+
+		</view>
 	
-		<text name="systemInfo">
-			<backgroundColor>00000000</backgroundColor>
-			<origin>0.5 0</origin>
-			<pos>0.5 0.56</pos>
-			<size>0.4 0.025</size>
-			<color>808080</color>
-			<fontSize>0.024</fontSize>
-		</text>
+	</feature>
 
-		<image name="background_help" extra="true">
-			<path>./_inc/images/bg_color.png</path>
-			<origin>0 1</origin>
-			<pos>0 0.998</pos>
-			<size>1 0.024</size>
-			<color>000000ff</color>
-		</image>
+	<view name="system, basic, detailed, video, grid">
 
 		<helpsystem name="help">
-			<textColor>808080</textColor>
-			<iconColor>808080</iconColor>
+			<textColor>909090</textColor>
+			<iconColor>909090</iconColor>
 			<origin>0.5 1</origin>
-			<pos>0.51 0.998</pos>
-			<fontSize>0.024</fontSize>
+			<pos>0.5 0.996</pos>
+			<fontSize>0.016</fontSize>
 		</helpsystem>
 
 	</view>
-	
-	</feature>
 
 	<view name="basic">
 
@@ -72,14 +75,28 @@ was the greatest teacher.
 			<origin>0 0</origin>
 			<pos>0 0</pos>
 			<size>1 1</size>
-<!-- If you change the background image, you might want to edit the following line. Or just delete it. Or just comment it out. -->
-			<color>ffffff88</color>
+		</image>
+
+		<image name="background_top1" extra="true">
+			<path>./_inc/images/bg_color.png</path>
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<size>1 0.17</size>
+			<color>00000044</color>
 		</image>
 
 		<image name="logo">
 			<origin>0.5 0.5</origin>
 			<pos>0.5 0.1</pos>
-			<maxSize>0.4 0.2</maxSize>
+			<maxSize>0.45 0.15</maxSize>
+		</image>
+
+		<image name="background_bottom1" extra="true">
+			<path>./_inc/images/bg_color.png</path>
+			<origin>0 0</origin>
+			<pos>0 0.58</pos>
+			<size>1 0.45</size>
+			<color>00000044</color>
 		</image>
 
 		<textlist name="gamelist">
@@ -88,10 +105,18 @@ was the greatest teacher.
 			<primaryColor>909090</primaryColor>
 			<secondaryColor>FF8800</secondaryColor>
 			<origin>0.5 0</origin>
-			<pos>0.5 0.165</pos>
-			<size>0.85 0.75</size>
-			<fontSize>0.032</fontSize>
+			<pos>0.5 0.17</pos>
+			<size>0.62 0.76</size>
+			<fontSize>0.03</fontSize>
 		</textlist>
+
+		<image name="background_help" extra="true">
+			<path>./_inc/images/bg_color.png</path>
+			<origin>0 1</origin>
+			<pos>0 1</pos>
+			<size>1 0.025</size>
+			<color>000000</color>
+		</image>
 
 	</view>
 
@@ -103,123 +128,129 @@ was the greatest teacher.
 			<origin>0 0</origin>
 			<pos>0 0</pos>
 			<size>1 1</size>
-<!-- If you change the background image, you might want to edit the following line. Or just delete it. Or just comment it out. -->
-			<color>ffffff88</color>
 		</image>
 
 		<image name="logo">
 			<origin>0.5 0.5</origin>
-			<pos>0.5 0.1</pos>
-			<maxSize>0.4 0.2</maxSize>
+			<pos>0.25 0.09</pos>
+			<maxSize>0.35 0.15</maxSize>
 		</image>
 
 		<textlist name="gamelist">
 			<selectorColor>00000000</selectorColor>
 			<selectedColor>FFFF00</selectedColor>
 			<primaryColor>909090</primaryColor>
-			<secondaryColor>ff8890</secondaryColor>
+			<secondaryColor>ff0088</secondaryColor>
 			<origin>0.5 0</origin>
-			<pos>0.5 0.16</pos>
-			<size>0.85 0.35</size>
-			<fontSize>0.032</fontSize>
+			<pos>0.245 0.13</pos>
+			<size>0.4 0.51</size>
+			<fontSize>0.026</fontSize>
 			<alignment>center</alignment>
 		</textlist>
 
-			<text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount">
-				<color>909090</color>
-				<forceUppercase>1</forceUppercase>
-				<fontSize>0.02</fontSize>
-				<size>0.13 0.01</size>
-			</text>
+		<image name="background_help" extra="true">
+			<path>./_inc/images/bg_color.png</path>
+			<origin>0 1</origin>
+			<pos>0 1</pos>
+			<size>1 0.025</size>
+			<color>000000</color>
+		</image>
 
-			<text name="md_developer, md_publisher, md_genre, md_players, md_playcount">
-				<color>909090</color>
-				<forceUppercase>1</forceUppercase>
-				<fontSize>0.02</fontSize>
-				<size>0.25 0.01</size>
-			</text>
-			<datetime name="md_releasedate, md_lastplayed">
-				<color>909090</color>
-				<forceUppercase>1</forceUppercase>
-				<fontSize>0.02</fontSize>
-				<size>0.25 0.01</size>
-			</datetime>
+		<text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount">
+			<color>909090</color>
+			<forceUppercase>1</forceUppercase>
+			<fontSize>0.02</fontSize>
+			<size>0.15 0.01</size>
+		</text>
 
-				<text name="md_lbl_rating">
-					<pos>0.55 0.745</pos>
-				</text>
-				<rating name="md_rating">
-					<pos>0.64 0.74</pos>
-					<size>0.1 0.02</size>
-				</rating>
+		<text name="md_developer, md_publisher, md_genre, md_players, md_playcount">
+			<color>909090</color>
+			<forceUppercase>1</forceUppercase>
+			<fontSize>0.02</fontSize>
+			<size>0.21 0.01</size>
+		</text>
 
-				<text name="md_lbl_players">
-					<pos>0.81 0.745</pos>
-				</text>
-				<text name="md_players">
-					<pos>0.91 0.745</pos>
-				</text>
+		<datetime name="md_releasedate, md_lastplayed">
+			<color>909090</color>
+			<forceUppercase>1</forceUppercase>
+			<fontSize>0.02</fontSize>
+			<size>0.21 0.01</size>
+		</datetime>
 
-				<text name="md_lbl_genre">
-					<pos>0.55 0.77</pos>
-				</text>
-				<text name="md_genre">
-					<pos>0.68 0.77</pos>
-				</text>
+		<text name="md_lbl_rating">
+			<pos>0.06 0.71</pos>
+		</text>
 
-				<text name="md_lbl_developer">
-					<pos>0.55 0.795</pos>
-				</text>
-				<text name="md_developer">
-					<pos>0.68 0.795</pos>
-				</text>
+		<rating name="md_rating">
+			<pos>0.24 0.705</pos>
+			<size>0.1 0.02</size>
+		</rating>
 
-				<text name="md_lbl_publisher">
-					<pos>0.55 0.82</pos>
-				</text>
-				<text name="md_publisher">
-					<pos>0.68 0.82</pos>
-				</text>
+		<text name="md_lbl_players">
+			<pos>0.06 0.74</pos>
+		</text>
 
-				<text name="md_lbl_releasedate">
-					<pos>0.55 0.845</pos>
-				</text>
-				<datetime name="md_releasedate">
-					<pos>0.68 0.845</pos>
-				</datetime>
+		<text name="md_players">
+			<pos>0.24 0.74</pos>
+		</text>
 
-				<text name="md_lbl_playcount">
-					<pos>1 1</pos>
-				</text>
+		<text name="md_lbl_genre">
+			<pos>0.06 0.77</pos>
+		</text>
 
-				<text name="num_of_plays" extra="true">
-					<text># of Plays:</text>
-					<color>909090</color>
-					<forceUppercase>1</forceUppercase>
-					<fontSize>0.02</fontSize>
-					<size>0.13 0.01</size>
-					<pos>0.55 0.87</pos>
-				</text>
-				<text name="md_playcount">
-					<pos>0.68 0.87</pos>
-				</text>
+		<text name="md_genre">
+			<pos>0.24 0.77</pos>
+		</text>
 
-				<text name="md_lbl_lastplayed">
-					<pos>0.55 0.895</pos>
-				</text>
-				<datetime name="md_lastplayed">
-					<pos>0.68 0.895</pos>
-				</datetime>
+		<text name="md_lbl_developer">
+			<pos>0.06 0.8</pos>
+		</text>
+
+		<text name="md_developer">
+			<pos>0.24 0.8</pos>
+		</text>
+
+		<text name="md_lbl_publisher">
+			<pos>0.06 0.82</pos>
+		</text>
+
+		<text name="md_publisher">
+			<pos>0.24 0.82</pos>
+		</text>
+
+		<text name="md_lbl_releasedate">
+			<pos>0.06 0.85</pos>
+		</text>
+
+		<datetime name="md_releasedate">
+			<pos>0.24 0.85</pos>
+		</datetime>
+
+		<text name="md_lbl_playcount">
+			<pos>0.06 0.88</pos>
+		</text>
+
+		<text name="md_playcount">
+			<pos>0.24 0.88</pos>
+		</text>
+
+		<text name="md_lbl_lastplayed">
+			<pos>0.06 0.91</pos>
+		</text>
+
+		<datetime name="md_lastplayed">
+			<pos>0.24 0.91</pos>
+		</datetime>
 		
-			<text name="md_description">
-				<pos>0.55 0.575</pos>
-				<size>0.38 0.15</size>
-				<color>909090</color>
-				<fontSize>0.02</fontSize>
-				<alignment>left</alignment>
-				<forceUppercase>1</forceUppercase>
-				<lineSpacing>1.2</lineSpacing>
-			</text>
+		<text name="md_description">
+			<pos>0.45 0.71</pos>
+			<size>0.5 0.21</size>
+			<color>909090</color>
+			<fontSize>0.02</fontSize>
+			<alignment>left</alignment>
+			<forceUppercase>1</forceUppercase>
+			<lineSpacing>1.2</lineSpacing>
+		</text>
 
 	</view>
 
@@ -227,8 +258,8 @@ was the greatest teacher.
 
 		<image name="md_image">
 			<origin>0.5 0.5</origin>
-			<pos>0.3 0.78</pos>
-			<maxSize>0.465 0.26</maxSize>
+			<pos>0.724222 0.425</pos>
+			<maxSize>0.44 0.5</maxSize>
 		</image>
 
 	</view>
@@ -237,15 +268,15 @@ was the greatest teacher.
 	<view name="video">
 
 		<image name="md_marquee">
-			<pos>0.3 0.605</pos>
-			<origin>0.49 0.5</origin>
-			<maxSize>0.25 0.08</maxSize>
+			<pos>0.724222 0.1</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>0.35 0.15</maxSize>
 		</image>
 
  		<video name="md_video">
 			<origin>0.5 0.5</origin>
-			<pos>0.3 0.78</pos>
-			<maxSize>0.465 0.26</maxSize>
+			<pos>0.724222 0.425</pos>
+			<maxSize>0.44 0.5</maxSize>
 			<delay>2</delay>
 			<default></default>
 			<showSnapshotNoVideo>true</showSnapshotNoVideo>
@@ -253,25 +284,5 @@ was the greatest teacher.
 		</video>
 	</view>
 	</feature>
-
-	<view name="basic, detailed, video, grid">
-
-		<image name="background_help" extra="true">
-			<path>./_inc/images/bg_color.png</path>
-			<origin>0 1</origin>
-			<pos>0 0.998</pos>
-			<size>1 0.015</size>
-			<color>000000ff</color>
-		</image>
-
-		<helpsystem name="help">
-			<textColor>808080</textColor>
-			<iconColor>808080</iconColor>
-			<origin>0.5 1</origin>
-			<pos>0.51 0.998</pos>
-			<fontSize>0.015</fontSize>
-		</helpsystem>
-
-	</view>
 
 </theme>
